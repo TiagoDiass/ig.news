@@ -13,8 +13,9 @@ export default class MyDocument extends Document {
 
           <link rel='icon' href='/favicon.png' type='image/png' />
 
-          {/*<meta property="og:image" content="/thumbnail.png" />
+          <meta property='og:image' content='/thumbnail.png' />
 
+          {/*
           <meta
             name="description"
             content="Podcastr | Os melhores podcasts de tecnologia para você ouvir!"
