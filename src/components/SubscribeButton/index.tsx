@@ -32,7 +32,7 @@ export default function SubscribeButton({ priceId }: SubscribeButtonProps) {
 
   return (
     <button type='button' className={styles.subscribeButton} onClick={handleSubscribe}>
-      Subscribe now
+      Se inscreva já
     </button>
   );
 }
