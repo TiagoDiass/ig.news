@@ -58,8 +58,8 @@ export default function PostPreview({ post }: PostPreviewProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
-    fallback: 'blocking',
+    paths: [], // nenhum path, ou seja, todas as páginas de preview serão geradas no primeiro acesso de cada uma
+    fallback: 'blocking', // se o post não foi gerado de forma estática, vai ser gerado estáticamente na camada do next server
   };
 };
 
@@ -85,5 +85,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       post,
     },
+    revalidate: 60 * 60 * 3, // 3 horas
   };
 };
