@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest"
+    "test": "jest --no-cache",
+    "test:watch": "yarn test --watch"
   },
   "dependencies": {
     "@prismicio/client": "^4.0.0",
