@@ -14,9 +14,9 @@ type HomeProps = {
 export default function Home({ product }: HomeProps) {
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>Home | ig.news</title>
-      </Head>
+      </Head> */}
 
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
@@ -30,7 +30,7 @@ export default function Home({ product }: HomeProps) {
             por <span>{product.amount}</span> ao mês
           </p>
 
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
 
         <img src='/images/avatar.svg' alt='Girl coding' />
